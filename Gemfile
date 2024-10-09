@@ -1,5 +1,5 @@
 source "https://rubygems.org"
-ruby "3.2.2" unless ENV["CI"] && !ENV["DIFF_CHECK_APPRAISAL"]
+ruby "3.3.5" unless ENV["CI"] && !ENV["DIFF_CHECK_APPRAISAL"]
 
 gemspec
 
@@ -18,7 +18,7 @@ gem "unicorn"
 
 gem "cssbundling-rails", "~> 1.4"
 gem "jsbundling-rails", "~> 1.3"
-gem "sprockets-rails", "~> 3.5"
+gem "propshaft"
 
 group :development, :test do
   gem "appraisal"

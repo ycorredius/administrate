@@ -863,14 +863,6 @@ trix-editor .attachment__metadata .attachment__size {
   padding-right: 0.6em;
 }
 
-.trix-content ul {
-  list-style-type: disc;
-}
-
-.trix-content ol {
-  list-style-type: decimal;
-}
-
 .trix-content li {
   margin-left: 1em;
 }
@@ -1834,7 +1826,7 @@ label {
 input,
 select {
   display: block;
-  font-family: -apple-system, blinkmacsystemfont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-size: 1em;
 }
 
@@ -1842,7 +1834,7 @@ input,
 select,
 textarea {
   display: block;
-  font-family: -apple-system, blinkmacsystemfont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-size: 16px;
 }
 
@@ -1888,7 +1880,7 @@ textarea {
 [type=week]:hover,
 input:not([type]):hover,
 textarea:hover {
-  border-color: #b2b3b4;
+  border-color: rgb(178.4, 179.2, 180);
 }
 [type=color]:focus,
 [type=date]:focus,
@@ -1923,7 +1915,7 @@ textarea:focus {
 [type=week]:disabled,
 input:not([type]):disabled,
 textarea:disabled {
-  background-color: #f2f2f2;
+  background-color: rgb(242.25, 242.25, 242.25);
   cursor: not-allowed;
 }
 [type=color]:disabled:hover,
@@ -2083,7 +2075,7 @@ td img {
 
 body {
   color: #293f54;
-  font-family: -apple-system, blinkmacsystemfont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-size: 1em;
   line-height: 1.5;
 }
@@ -2094,7 +2086,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: -apple-system, blinkmacsystemfont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-size: 1em;
   line-height: 1.2;
   margin: 0;
@@ -2126,7 +2118,7 @@ a:hover,
 [type=button],
 [type=reset],
 [type=submit]):hover {
-  color: #13599e;
+  color: rgb(18.75, 88.5, 157.5);
 }
 a:focus,
 .link:is(button,
@@ -2200,7 +2192,7 @@ button,
   color: #ffffff;
   cursor: pointer;
   display: inline-block;
-  font-family: -apple-system, blinkmacsystemfont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-size: 1em;
   -webkit-font-smoothing: antialiased;
   font-weight: 700;
@@ -2225,7 +2217,7 @@ button:not(.link):hover,
 [type=reset]:not(.link):hover,
 [type=submit]:not(.link):hover,
 .button:not(.link):hover {
-  background-color: #145ea8;
+  background-color: rgb(20, 94.4, 168);
   color: #ffffff;
 }
 button:not(.link):focus,
@@ -2255,7 +2247,7 @@ button:not(.link):disabled:hover,
   background-color: #d32f2f;
 }
 .button--danger:hover {
-  background-color: #a92626;
+  background-color: rgb(168.8, 37.6, 37.6);
   color: #ffffff;
 }
 
@@ -2327,10 +2319,9 @@ button:not(.link):disabled:hover,
 }
 
 .field-unit__field {
+  flex-grow: 1;
   float: left;
   margin-left: 2rem;
-  max-width: 50rem;
-  width: 100%;
 }
 .field-unit__field .optgroup-header {
   font-weight: 700;
@@ -2350,7 +2341,7 @@ button:not(.link):disabled:hover,
   width: 100%;
 }
 .field-unit--nested .field-unit__field {
-  width: 100%;
+  flex-grow: 1;
 }
 .field-unit--nested .field-unit__label {
   width: 10rem;
@@ -2363,66 +2354,66 @@ button:not(.link):disabled:hover,
 
 .flash-alert {
   background-color: #fff6bf;
-  color: #66624c;
+  color: rgb(102, 98.4, 76.4);
   display: block;
   margin-bottom: 0.75em;
   padding: 0.75em;
   text-align: center;
 }
 .flash-alert a {
-  color: #4d4a39;
+  color: rgb(76.5, 73.8, 57.3);
   text-decoration: underline;
 }
 .flash-alert a:focus, .flash-alert a:hover {
-  color: #1a1913;
+  color: rgb(25.5, 24.6, 19.1);
 }
 
 .flash-error {
   background-color: #fbe3e4;
-  color: #645b5b;
+  color: rgb(100.4, 90.8, 91.2);
   display: block;
   margin-bottom: 0.75em;
   padding: 0.75em;
   text-align: center;
 }
 .flash-error a {
-  color: #4b4444;
+  color: rgb(75.3, 68.1, 68.4);
   text-decoration: underline;
 }
 .flash-error a:focus, .flash-error a:hover {
-  color: #191717;
+  color: rgb(25.1, 22.7, 22.8);
 }
 
 .flash-notice {
   background-color: #e5edf8;
-  color: #5c5f63;
+  color: rgb(91.6, 94.8, 99.2);
   display: block;
   margin-bottom: 0.75em;
   padding: 0.75em;
   text-align: center;
 }
 .flash-notice a {
-  color: #45474a;
+  color: rgb(68.7, 71.1, 74.4);
   text-decoration: underline;
 }
 .flash-notice a:focus, .flash-notice a:hover {
-  color: #171819;
+  color: rgb(22.9, 23.7, 24.8);
 }
 
 .flash-success {
   background-color: #e6efc2;
-  color: #5c604e;
+  color: rgb(92, 95.6, 77.6);
   display: block;
   margin-bottom: 0.75em;
   padding: 0.75em;
   text-align: center;
 }
 .flash-success a {
-  color: #45483a;
+  color: rgb(69, 71.7, 58.2);
   text-decoration: underline;
 }
 .flash-success a:focus, .flash-success a:hover {
-  color: #171813;
+  color: rgb(23, 23.9, 19.4);
 }
 
 .form-actions {
@@ -2478,7 +2469,7 @@ button:not(.link):disabled:hover,
   margin-bottom: 0.75em;
 }
 .navigation__link:hover {
-  background-color: #eaebeb;
+  background-color: rgb(233.7, 234.65, 234.65);
   border-radius: 4px;
   color: #293f54;
 }
@@ -2547,5 +2538,3 @@ button:not(.link):disabled:hover,
 .search__clear-icon:hover {
   fill: #1976d2;
 }
-
-/*# sourceMappingURL=application.css.map */
